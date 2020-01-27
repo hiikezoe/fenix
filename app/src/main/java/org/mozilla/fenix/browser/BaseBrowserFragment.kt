@@ -449,6 +449,7 @@ abstract class BaseBrowserFragment : Fragment(), UserInteractionHandler, Session
             }
 
             (activity as HomeActivity).updateThemeForSession(session)
+            view.engineView.setDynamicToolbarMaxHeight(browserToolbarView.view.getLayoutParams().height)
         }
     }
 
